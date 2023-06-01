@@ -1,31 +1,6 @@
 <html>
   <head>
     <style>
-      @keyframes hor-movement {
-  from {
-    margin-left: 0%;
-  }
-  to {
-    margin-left: 100%;
-  }
-}
-
-@keyframes ver-movement {
-  from {
-    margin-top: 0%;
-  }
-  to {
-    margin-top: 100%;
-  }
-}
-
-#i {
-  animation-name: hor-movement, ver-movement;
-  animation-duration: 4.141s, 2.414s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
       body{
         font-family:'Courier New', monospace;
         background-image: url('color.jfif');
@@ -79,6 +54,7 @@
         width:175px;
         height:50px;
       }
+          * {margin:0; padding: 0; color:red;}
     </style>
     <title>monkey candy</title>
      <link rel="icon" type="image/x-icon" href="logo.ico">
@@ -87,7 +63,6 @@
         <center>
     <header>
       <a href='https://monkeycandy.github.io/fr/'><button id='fr'>French version</button></a>
-    <img class="image" id='i' src="monkeycandy logo.jpg"> </img>
 
       <b><u><h1 id='title'>Monkey candy</h1></u></b>
       </br>
@@ -97,6 +72,8 @@
     </br>
   <marquee><h1>everything is 30% off</h1></marquee>
   </br>
+  <canvas id="tv-screen"></canvas>
+        <script src="js/app.js"></script>
 </br>
 </br>
 </br>
